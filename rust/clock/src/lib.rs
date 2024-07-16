@@ -1,4 +1,4 @@
-use std::fmt;
+use std::fmt::{self, Display};
 
 pub struct Clock;
 
@@ -12,7 +12,7 @@ impl Clock {
     }
 }
 
-impl fmt::Display for Clock {
+impl Display for Clock {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "")
     }
